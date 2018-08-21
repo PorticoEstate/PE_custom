@@ -377,7 +377,7 @@
 						}
 					}
 					?>
-					<p>Leiesummen skal betales forskuddsvis hver mnd.<br/>
+					<p>Leiesummen faktureres i slutten av inneværende mnd.<br/>
 						Ved forsinket betaling skal det betales forsinkelsesrente etter lov om forsinket betaling av 17.des. 1976 nr. 100.<br/>
 						Ved mislighold av leiebetaling samtykker leietaker i at utleier kan foreta direkte trekk av tilgodehavende husleie direkte av leietakers lønn.<br/>
 						Husleie skal reguleres i takt med konsumprisindeksen hvert år. I tillegg kan utleier justere leie til enhver tid markedsleie for denne type bolig.</p>
