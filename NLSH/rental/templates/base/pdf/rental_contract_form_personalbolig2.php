@@ -408,7 +408,7 @@
 							}
 							?>  /></dt>
 						<dd>I tillegg til den avtalte månedlige husleie er leietaker personlig ansvarlig for strøm,	forsikring, oppvarming og avtalt vedlikehold av boligen/boligrommet.<br/>
-							Utleier kan opprette strømavtale på vegne av leietaker.
+							Utleier må selv opprette strømavtale.
 						</dd>
 					</dl>
 
