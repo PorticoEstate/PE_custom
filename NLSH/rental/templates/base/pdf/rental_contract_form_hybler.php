@@ -121,7 +121,18 @@ $termin_name = str_replace("vis", "", $termin_name);
 	<dt>Innflytting-dato:</dt>
 	<dd><?php echo date($date_format, $contract_dates->get_start_date());?>&nbsp;</dd>
 	<dt>Utflytting-dato:</dt>
-	<dd><?php echo date($date_format, $contract_dates->get_end_date());?>&nbsp;</dd>
+	<dd><?php 
+		if($contract_dates->get_end_date())
+		{
+			echo date($date_format, $contract_dates->get_end_date());
+		}
+		else
+		{
+			echo "Tidsubestemt kontrakt med oppsigelsestid 2 mnd";
+		}
+			
+			?>&nbsp;
+	</dd>
 </dl>
 </div>
 

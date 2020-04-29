@@ -352,8 +352,24 @@
 						Leieforholdet kan forlenges ved særskilt skriftlig avtale mellom partene.</br>
 					</p>
 
-					<p> Leieforholdet er tidsbestemt og starter den <?php echo date($date_format, $contract_dates->get_start_date());?>
-						og opphører uten oppsigelse den <?php echo date($date_format, $contract_dates->get_end_date());?> kl. 1200<br />
+					<p> 
+						<?php 
+						
+						if($contract_dates->get_end_date())
+						{
+							echo "Leieforholdet er tidsbestemt og starter den ";
+							echo date($date_format, $contract_dates->get_start_date());
+							echo " og opphører uten oppsigelse den ";
+							echo date($date_format, $contract_dates->get_end_date());
+							echo " kl. 1200<br />";
+						}
+						else
+						{
+							echo "Leieforholdet er tidsubestemt og starter den ";
+							echo date($date_format, $contract_dates->get_start_date());
+							echo ", med oppsigelsestid 2 mnd<br />";
+						}
+						?>
 						<i>
 							Leieavtalen kan uavhengig av gjeldende frist sies opp av begge parter ved en av partenes vesentlige mislighold av avtalen.
 							Med vesentlig mislighold forstås samme vilkår som nevnt i Husleieloven § 9-9.
@@ -408,7 +424,7 @@
 							}
 							?>  /></dt>
 						<dd>I tillegg til den avtalte månedlige husleie er leietaker personlig ansvarlig for strøm,	forsikring, oppvarming og avtalt vedlikehold av boligen/boligrommet.<br/>
-							Leietaker må selv opprette strømavtale.
+							Utleier kan opprette strømavtale på vegne av leietaker.
 						</dd>
 					</dl>
 
