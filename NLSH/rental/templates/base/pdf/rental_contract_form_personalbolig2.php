@@ -528,7 +528,19 @@
 						<dt>12</dt>
 						<dd>Oppsigelse</dd>
 					</dl>
-					<p>Leieforholdet er tidsbestemt og opphører uten ytterligere varsel fra utleier jfr. husleielovens § 9-2.</p>
+					<p>
+						<?php 
+						
+						if($contract_dates->get_end_date())
+						{
+							echo "Leieforholdet er tidsbestemt og opphører uten ytterligere varsel fra utleier jfr. husleielovens § 9-2.";
+						}
+						else
+						{
+							echo "Leieforholdet er tidsubestemt med oppsigelsestid 2 mnd";
+						}
+						?>
+					</p>
 				</div>
 				<div class="section">
 					<dl class="section_header">
