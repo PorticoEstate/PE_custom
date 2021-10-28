@@ -205,12 +205,12 @@ foreach ($termin_price_items as $item)
 {
 	?>
 <p><?php echo $_POST['notes']?></p>
-<input type="hidden" name="notes" value="<?php echo (htmlspecialchars($_POST['notes'],ENT_QUOTES, UTF-8,false));?>" />
+<input type="hidden" name="notes" value="<?php echo (htmlspecialchars($_POST['notes'],ENT_QUOTES, 'UTF-8',false));?>" />
 	<?php
 }
 else
 {
-	?> <textarea rows="3" cols="" name="notes"><?php echo (htmlspecialchars($_POST['notes'],ENT_QUOTES, UTF-8,false));?></textarea> <?php
+	?> <textarea rows="3" cols="" name="notes"><?php echo (htmlspecialchars($_POST['notes'],ENT_QUOTES, 'UTF-8',false));?></textarea> <?php
 }
 ?> <br />
 </div>
